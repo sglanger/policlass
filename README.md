@@ -13,7 +13,7 @@ a docker to classify FaceBook posts
 * Entrypoint: The script is the entrypoint, so everything after the image name goes straight to its flags. With no arguments it runs --demo.
 * Model: To change it, add -e CLASSIFIER_MODEL=claude-sonnet-5-5 or use --model.
 
-## The run line
+## The run line if providing Inputs and a folder for Output Classifications
 docker run --rm \
   -e ANTHROPIC_API_KEY=sk-ant-... \
   -v "$(pwd)/data:/data" \
