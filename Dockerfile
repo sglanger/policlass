@@ -6,6 +6,7 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
+run apt-get install bash
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
